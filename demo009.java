@@ -1,29 +1,27 @@
-public class demo009 {
+import java.util.*;
 
-    private String customerName;
-    private String accountNumber;
-    private double balance;
+public class Demo009 {
+    private String custname;
+    private long bankaccno;
+    private Double balance;
 
-
-    public demo009(String customerName, String accountNumber, double initialBalance) {
-        this.customerName = customerName;
-        this.accountNumber = accountNumber;
-        this.balance = initialBalance;
+    void input(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        custname = sc.next();
+        System.out.print("Enter your account number: ");
+        bankaccno = sc.nextLong();
+        System.out.print("Enter bank balance: ");
+        balance = sc.nextDouble();
+        Demo009 obj = new Demo009();
     }
 
-    // Method to display account details
-    public void displayAccountDetails() {
-        System.out.println("Customer Name: " + customerName);
-        System.out.println("Account Number: " + accountNumber);
-        System.out.println("Balance: " + balance);
+    void display(){
+        System.out.println("Hello "+custname+"\nBank account number: "+bankaccno+"\nBalance: "+balance);
     }
-
-    // Main method to test the class
     public static void main(String[] args) {
-        // Create a new bank account
-        demo009 account = new demo009("vaishnavi", "1234567890", 5000.00);
-
-        // Display account details
-        account.displayAccountDetails();
+        Demo009 obj = new Demo009();
+        obj.input();
+        obj.display();
     }
 }
