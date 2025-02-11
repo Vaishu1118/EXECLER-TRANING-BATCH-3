@@ -1,6 +1,7 @@
 package Core_Java;
 
 import java.util.Iterator;
+
 import java.util.*;
 class LinkedHashSetDemo{
     void linkedHashsetMethod(){
