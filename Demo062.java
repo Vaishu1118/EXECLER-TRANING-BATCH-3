@@ -1,5 +1,3 @@
-package Core_Java;
-
 public class Demo062 {
 
     public static void main(String[] args) {
